@@ -1,7 +1,7 @@
 // Example from https://beta.reactjs.org/learn
 
 import { useState } from 'react'
-import styles from './counters.module.css'
+import styles from './method.module.css'
 import Image from 'next/image'
 import frontend from 'image/frontend.png'
 import backend from 'image/backend.png'
@@ -17,49 +17,47 @@ function MyButton() {
   }
   return (
     <>
-      <div className={styles.counter}>
-        <div className={styles.counter}>
+      <div className={styles.method}>
+        <div className={styles.method}>
           <Link href={'/deployment/backend'}>
             <Image 
-            width={800} 
+            width={500} 
             height={500} 
             src={frontend}
             alt="" />
-            <div  className={styles.texts} >
-            <span className={styles.text}>Deploy Frontend</span></div></Link>
-
-          {/* <button onClick={handleClick} className={styles.counter}>
-        Clicked {count} times
-      </button> */}
+           </Link>
         </div>
-        <div className={styles.counter}>
+        <div className={styles.method}>
           <div>
           <Link href={'/deployment/frontend'}>
             <Image 
-            width={800} 
+            width={500} 
             height={500} 
             src={backend}
             alt="" />
-            <div  className={styles.texts} >
-            <span className={styles.text}>Deploy Backend</span></div></Link>
-            {/* <button onClick={handleClick} className={styles.counter}>
-      Clicked {count} times
-    </button> */}
+           </Link>
           </div>
         </div>
-        <div className={styles.counter}>
+        <div className={styles.method}>
           <div>
           <Link href={'/deployment/database'}>
             <Image 
-            width={800} 
+            width={500} 
             height={500} 
             src={db}
             alt="" />
-             <div  className={styles.texts} >
-            <span className={styles.text}>Deploy Database</span></div></Link>
-            {/* <button onClick={handleClick} className={styles.counter}>
-    Clicked {count} times
-  </button> */}
+            </Link>
+          </div>
+        </div>
+        <div className={styles.method}>
+          <div>
+          <Link href={'/deployment/database'}>
+            <Image 
+            width={500} 
+            height={500} 
+            src={db}
+            alt="" />
+            </Link>
           </div>
         </div>
       </div>

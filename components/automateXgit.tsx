@@ -1,10 +1,8 @@
 // Example from https://beta.reactjs.org/learn
 
-import { useState } from 'react'
+import { Fragment, useState } from 'react'
 import styles from './counters.module.css'
 import Image from 'next/image'
-import frontend from 'image/frontend.png'
-import Link from 'next/link'
 
 
 function MyButton() {
@@ -13,26 +11,40 @@ function MyButton() {
   function handleClick() {
     setCount(count + 1)
   }
+
   return (
     <>
-      <div className={styles.counter}>
+      <div className={styles.container}>
         <div className={styles.counter}>
-          <Link href={'/deployment/backend'}>
-            <Image 
-            width={800} 
-            height={500} 
-            src={frontend}
-            alt="" />
-            <div  className={styles.texts} >
-            <span className={styles.text}>Deploy Frontend</span></div></Link>
-
-          {/* <button onClick={handleClick} className={styles.counter}>
-        Clicked {count} times
-      </button> */}
+          <Image
+            width={800}
+            height={500}
+            src="/images/gitx_method.jpeg"
+            alt=" "
+            unoptimized={true}
+          />
         </div>
-   
+        <div>click on Resource</div>
+        <div className={styles.counter}>
+          <Image
+            width={800}
+            height={500}
+            src="/images/gitx_resource.png"
+            alt=" "
+            unoptimized={true}
+          />
+        </div>
+        <div>Click on Submit Button</div>
+        <div className={styles.counter}>
+          <Image
+            width={800}
+            height={500}
+            src="/images/submit.png"
+            alt=" "
+            unoptimized={true}
+          />
+        </div>
       </div>
-
     </>
   )
 }

@@ -1,13 +1,11 @@
 // Example from https://beta.reactjs.org/learn
-
 import { useState } from 'react'
 import styles from './counters.module.css'
 import Image from 'next/image'
-import frontend from 'image/frontend.png'
-import Link from 'next/link'
+ 
 
 
-function MyButton() {
+function MyButton(props) {
   const [count, setCount] = useState(0)
 
   function handleClick() {
@@ -15,22 +13,37 @@ function MyButton() {
   }
   return (
     <>
-      <div className={styles.counter}>
-        <div className={styles.counter}>
-          <Link href={'/deployment/backend'}>
-            <Image 
-            width={800} 
-            height={500} 
-            src={frontend}
-            alt="" />
-            <div  className={styles.texts} >
-            <span className={styles.text}>Deploy Frontend</span></div></Link>
+      <div className={styles.container}>
 
-          {/* <button onClick={handleClick} className={styles.counter}>
-        Clicked {count} times
-      </button> */}
+        <div className={styles.counter}>
+          <Image
+            width={800}
+            height={500}
+            src="/images/giturl_method.png"
+            alt=" "
+            unoptimized={true}
+          />
         </div>
-   
+        <div>Drop your Git Url </div>
+        <div className={styles.counter}>
+          <Image
+            width={800}
+            height={500}
+            src="/images/link_git.png"
+            alt=" "
+            unoptimized={true}
+          />
+        </div>
+        <div>Click on Submit Button</div>
+        <div className={styles.counter}>
+          <Image
+            width={800}
+            height={500}
+            src="/images/submit.png"
+            alt=" "
+            unoptimized={true}
+          />
+        </div>
       </div>
 
     </>

@@ -1,6 +1,6 @@
 // Example from https://beta.reactjs.org/learn
 
-import { useState } from 'react'
+import { Fragment, useState } from 'react'
 import styles from './counters.module.css'
 import Image from 'next/image'
 
@@ -11,21 +11,20 @@ function MyButton() {
   function handleClick() {
     setCount(count + 1)
   }
+
   return (
     <>
       <div className={styles.container}>
-                          
         <div className={styles.counter}>
           <Image
             width={800}
             height={500}
-            src="/images/github_method.png"
+            src="/images/deploy.png"
             alt=" "
             unoptimized={true}
           />
         </div>
       </div>
-
     </>
   )
 }

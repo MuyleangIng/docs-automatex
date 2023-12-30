@@ -1,0 +1,136 @@
+// Example from https://beta.reactjs.org/learn
+
+import { useState } from 'react'
+import styles from '../../counters.module.css'
+import Image from 'next/image'
+
+
+function MyButton() {
+  const [count, setCount] = useState(0)
+
+  function handleClick() {
+    setCount(count + 1)
+  }
+  return (
+    <>
+      <div className={styles.container}>
+        <div className={styles.counter}>
+          <Image
+            width={800}
+            height={500}
+            src="/images/frontend_type.png"
+            alt=" "
+            unoptimized={true}
+          />
+        </div>
+      </div>
+      <div>After that, take a look at your project dashboard</div>
+      <div className={styles.container}>
+        <div className={styles.counter}>
+          <Image
+            width={800}
+            height={500}
+            src="/images/dashboard.png"
+            alt=" "
+            unoptimized={true}
+          />
+        </div>
+      </div>
+      <div>With the tabs of the project</div>
+      <div className={styles.container}>
+        <div className={styles.counter}>
+          <Image
+            width={800}
+            height={500}
+            src="/images/deploy_tab.png"
+            alt=" "
+            unoptimized={true}
+          />
+        </div>
+      </div>
+      <div>Overview : is the details of your project</div>
+      <div className={styles.container}>
+        <div className={styles.counter}>
+          <Image
+            width={800}
+            height={500}
+            src="/images/frontend_OV.png"
+            alt=" "
+            unoptimized={true}
+          />
+        </div>
+      </div>
+      <div>Resource : showing your code within the project</div>
+      <div className={styles.container}>
+        <div className={styles.counter}>
+          <Image
+            width={800}
+            height={500}
+            src="/images/frontend_Resource.png"
+            alt=" "
+            unoptimized={true}
+          />
+        </div>
+      </div>
+      <div>Activities : showing you your logs of each build</div>
+      <div className={styles.container}>
+        <div className={styles.counter}>
+          <Image
+            width={800}
+            height={500}
+            src="/images/deploy.png"
+            alt=" "
+            unoptimized={true}
+          />
+        </div>
+      </div>
+      <div>Report : list down all of your vulnerabilities</div>
+      <div className={styles.container}>
+        <div className={styles.counter}>
+          <Image
+            width={800}
+            height={500}
+            src="/images/frontend_Report.png"
+            alt=" "
+            unoptimized={true}
+          />
+        </div>
+      </div>
+      <div>Setting : place for edting your project</div>
+      <div className={styles.container}>
+        <div className={styles.counter}>
+          <Image
+            width={800}
+            height={500}
+            src="/images/frontend_Setting.png"
+            alt=" "
+            unoptimized={true}
+          />
+        </div>
+      </div>
+
+
+      {/* After that, take a look at your project dashboard 
+<Frontend />
+With the tabs of the project
+<Frontend />
+Overview : is the details of your project
+<Frontend />
+Resource : showing your code within the project
+<Frontend />
+Activities : showing you your logs of each buildr
+<Frontend />
+Report : list down all of your vulnerabilities
+<Frontend />
+Setting : place for edting your project
+<Frontend /> */}
+
+
+    </>
+  )
+}
+
+
+export default function MyApp() {
+  return <MyButton />
+}

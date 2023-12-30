@@ -1,6 +1,6 @@
 // Example from https://beta.reactjs.org/learn
 
-import { useState } from 'react'
+import { Fragment, useState } from 'react'
 import styles from './counters.module.css'
 import Image from 'next/image'
 
@@ -11,35 +11,42 @@ function MyButton() {
   function handleClick() {
     setCount(count + 1)
   }
+
   return (
     <>
+      <div className={styles.text}>Loggin with your AutomateX Cloud</div>
       <div className={styles.container}>
+        <div className={styles.counter}>
+          <Image
+            width={800}
+            height={500}
+            src="/images/cloud.png"
+            alt=" "
+            unoptimized={true}
+          />
+        </div>
+      </div>
 
+      <div className={styles.text}>U can Upload Your Office Document</div>
+      <div className={styles.container}>
         <div className={styles.counter}>
           <Image
             width={800}
             height={500}
-            src="/images/github_method.png"
+            src="/images/cloud_upload.png"
             alt=" "
             unoptimized={true}
           />
         </div>
-        <div>Connect to Your Git </div>
+      </div>
+    
+      <div className={styles.text}>Cloud User Setting</div>
+      <div className={styles.container}>
         <div className={styles.counter}>
           <Image
             width={800}
             height={500}
-            src="/images/github.png"
-            alt=" "
-            unoptimized={true}
-          />
-        </div>
-        <div>Click on Submit Button</div>
-        <div className={styles.counter}>
-          <Image
-            width={800}
-            height={500}
-            src="/images/submit.png"
+            src="/images/cloud_setting.png"
             alt=" "
             unoptimized={true}
           />

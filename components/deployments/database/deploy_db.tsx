@@ -13,102 +13,42 @@ function MyButton() {
     }
     return (
         <>
+         <div>1. Choose the database: </div>
             <div className={styles.container}>
                 <div className={styles.counter}>
                     <Image
                         width={800}
                         height={500}
-                        src="/images/database_type.png"
+                        src="/images/database.png"
                         alt=" "
                         unoptimized={true}
                     />
                 </div>
             </div>
-            <div>After that, take a look at your project dashboard</div>
+            <div>2. Enter the required information</div>
             <div className={styles.container}>
                 <div className={styles.counter}>
                     <Image
                         width={800}
                         height={500}
-                        src="/images/dashboard.png"
+                        src="/images/db-form.png"
                         alt=" "
                         unoptimized={true}
                     />
                 </div>
             </div>
-            <div>With the tabs of the project</div>
+            <div>3. Copy the important information to connect to your database</div>
             <div className={styles.container}>
                 <div className={styles.counter}>
                     <Image
                         width={800}
                         height={500}
-                        src="/images/deploy_tab.png"
+                        src="/images/db-list.png"
                         alt=" "
                         unoptimized={true}
                     />
                 </div>
             </div>
-            <div>Overview : is the details of your project</div>
-            <div className={styles.container}>
-                <div className={styles.counter}>
-                    <Image
-                        width={800}
-                        height={500}
-                        src="/images/frontend_OV.png"
-                        alt=" "
-                        unoptimized={true}
-                    />
-                </div>
-            </div>
-            <div>Resource : showing your code within the project</div>
-            <div className={styles.container}>
-                <div className={styles.counter}>
-                    <Image
-                        width={800}
-                        height={500}
-                        src="/images/frontend_Resource.png"
-                        alt=" "
-                        unoptimized={true}
-                    />
-                </div>
-            </div>
-            <div>Activities : showing you your logs of each build</div>
-            <div className={styles.container}>
-                <div className={styles.counter}>
-                    <Image
-                        width={800}
-                        height={500}
-                        src="/images/deploy.png"
-                        alt=" "
-                        unoptimized={true}
-                    />
-                </div>
-            </div>
-            <div>Report : list down all of your vulnerabilities</div>
-            <div className={styles.container}>
-                <div className={styles.counter}>
-                    <Image
-                        width={800}
-                        height={500}
-                        src="/images/frontend_Report.png"
-                        alt=" "
-                        unoptimized={true}
-                    />
-                </div>
-            </div>
-            <div>Setting : place for edting your project</div>
-            <div className={styles.container}>
-                <div className={styles.counter}>
-                    <Image
-                        width={800}
-                        height={500}
-                        src="/images/frontend_Setting.png"
-                        alt=" "
-                        unoptimized={true}
-                    />
-                </div>
-            </div>
-
         </>
     )
 }

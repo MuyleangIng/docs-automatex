@@ -24,7 +24,7 @@ function MyButton() {
           />
         </div>
       </div>
-      <div>After that, take a look at your project dashboard</div>
+      <div>Go to project dashboard and click on the project that you've just created</div>
       <div className={styles.container}>
         <div className={styles.counter}>
           <Image
@@ -36,7 +36,7 @@ function MyButton() {
           />
         </div>
       </div>
-      <div>With the tabs of the project</div>
+      <div>After that, you will see tabs of the project</div>
       <div className={styles.container}>
         <div className={styles.counter}>
           <Image
@@ -48,7 +48,7 @@ function MyButton() {
           />
         </div>
       </div>
-      <div>Overview : is the details of your project</div>
+      <div>Overview : is the details of your project (access your application with the url here)</div>
       <div className={styles.container}>
         <div className={styles.counter}>
           <Image
@@ -96,7 +96,7 @@ function MyButton() {
           />
         </div>
       </div>
-      <div>Setting : place for edting your project</div>
+      <div>Setting : place for editing your project</div>
       <div className={styles.container}>
         <div className={styles.counter}>
           <Image
@@ -108,23 +108,6 @@ function MyButton() {
           />
         </div>
       </div>
-
-
-      {/* After that, take a look at your project dashboard 
-<Frontend />
-With the tabs of the project
-<Frontend />
-Overview : is the details of your project
-<Frontend />
-Resource : showing your code within the project
-<Frontend />
-Activities : showing you your logs of each buildr
-<Frontend />
-Report : list down all of your vulnerabilities
-<Frontend />
-Setting : place for edting your project
-<Frontend /> */}
-
 
     </>
   )

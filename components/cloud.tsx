@@ -14,7 +14,7 @@ function MyButton() {
 
   return (
     <>
-      <div className={styles.text}>Loggin with your AutomateX Cloud</div>
+      <div className={styles.text}>1. Log in to AutomateX Cloud with your AutomateX account</div>
       <div className={styles.container}>
         <div className={styles.counter}>
           <Image
@@ -27,7 +27,7 @@ function MyButton() {
         </div>
       </div>
 
-      <div className={styles.text}>U can Upload Your Office Document</div>
+      <div className={styles.text}>2. Then, you will be able to upload and create any files as you want </div>
       <div className={styles.container}>
         <div className={styles.counter}>
           <Image
@@ -40,7 +40,7 @@ function MyButton() {
         </div>
       </div>
     
-      <div className={styles.text}>Cloud User Setting</div>
+      <div className={styles.text}>3. Edit your profile with "Cloud User Setting"</div>
       <div className={styles.container}>
         <div className={styles.counter}>
           <Image

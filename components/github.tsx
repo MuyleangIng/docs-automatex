@@ -24,7 +24,7 @@ function MyButton() {
             unoptimized={true}
           />
         </div>
-        <div>Connect to Your Git </div>
+        <div>GitHub - Connect to Your Git Hub </div>
         <div className={styles.counter}>
           <Image
             width={800}
@@ -34,7 +34,7 @@ function MyButton() {
             unoptimized={true}
           />
         </div>
-        <div>Click on Submit Button</div>
+        <div>GitHub - Click on Submit Button</div>
         <div className={styles.counter}>
           <Image
             width={800}

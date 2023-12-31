@@ -24,7 +24,7 @@ function MyButton() {
           />
         </div>
       </div>
-      <div className={styles.text}>After that, take a look at your project dashboard</div>
+      <div >Go to project dashboard and click on the project that you've just created</div>
       <div className={styles.container}>
         <div className={styles.counter}>
           <Image
@@ -36,7 +36,7 @@ function MyButton() {
           />
         </div>
       </div>
-      <div className={styles.text}>With the tabs of the project</div>
+      <div>After that, you will see tabs of the project</div>
       <div className={styles.container}>
         <div className={styles.counter}>
           <Image
@@ -48,7 +48,7 @@ function MyButton() {
           />
         </div>
       </div>
-      <div className={styles.text}>Overview : is the details of your project</div>
+      <div>Overview : is the details of your project (access your application with the url here)</div>
       <div className={styles.container}>
         <div className={styles.counter}>
           <Image
@@ -60,7 +60,7 @@ function MyButton() {
           />
         </div>
       </div>
-      <div className={styles.text}>Resource : showing your code within the project</div>
+      <div>Resource : showing your code within the project</div>
       <div className={styles.container}>
         <div className={styles.counter}>
           <Image
@@ -72,7 +72,7 @@ function MyButton() {
           />
         </div>
       </div>
-      <div className={styles.text}>Activities : showing you your logs of each build</div>
+      <div>Activities : showing you your logs of each build</div>
       <div className={styles.container}>
         <div className={styles.counter}>
           <Image
@@ -84,7 +84,7 @@ function MyButton() {
           />
         </div>
       </div>
-      <div className={styles.text}>Report : list down all of your vulnerabilities</div>
+      <div>Report : list down all of your vulnerabilities</div>
       <div className={styles.container}>
         <div className={styles.counter}>
           <Image
@@ -96,7 +96,7 @@ function MyButton() {
           />
         </div>
       </div>
-      <div className={styles.text}>Setting : place for edting your project</div>
+      <div>Setting : place for editing your project</div>
       <div className={styles.container}>
         <div className={styles.counter}>
           <Image

@@ -24,7 +24,7 @@ function MyButton(props) {
             unoptimized={true}
           />
         </div>
-        <div>Drop your Git Url </div>
+        <div>Source Code - Drop your public git url </div>
         <div className={styles.counter}>
           <Image
             width={800}
@@ -34,7 +34,7 @@ function MyButton(props) {
             unoptimized={true}
           />
         </div>
-        <div>Click on Submit Button</div>
+        <div>Source Code - Click on Submit Button</div>
         <div className={styles.counter}>
           <Image
             width={800}

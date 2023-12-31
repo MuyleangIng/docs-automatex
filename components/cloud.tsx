@@ -1,51 +1,57 @@
 // Example from https://beta.reactjs.org/learn
-import { useState } from 'react'
+
+import { Fragment, useState } from 'react'
 import styles from './counters.module.css'
 import Image from 'next/image'
- 
 
 
-function MyButton(props) {
+function MyButton() {
   const [count, setCount] = useState(0)
 
   function handleClick() {
     setCount(count + 1)
   }
+
   return (
     <>
+      <div className={styles.text}>1. Log in to AutomateX Cloud with your AutomateX account</div>
       <div className={styles.container}>
-
         <div className={styles.counter}>
           <Image
             width={800}
             height={500}
-            src="/images/giturl_method.png"
-            alt=" "
-            unoptimized={true}
-          />
-        </div>
-        <div>Source Code - Drop your public git url </div>
-        <div className={styles.counter}>
-          <Image
-            width={800}
-            height={500}
-            src="/images/link_git.png"
-            alt=" "
-            unoptimized={true}
-          />
-        </div>
-        <div>Source Code - Click on Submit Button</div>
-        <div className={styles.counter}>
-          <Image
-            width={800}
-            height={500}
-            src="/images/submit.png"
+            src="/images/cloud.png"
             alt=" "
             unoptimized={true}
           />
         </div>
       </div>
 
+      <div className={styles.text}>2. Then, you will be able to upload and create any files as you want </div>
+      <div className={styles.container}>
+        <div className={styles.counter}>
+          <Image
+            width={800}
+            height={500}
+            src="/images/cloud_upload.png"
+            alt=" "
+            unoptimized={true}
+          />
+        </div>
+      </div>
+    
+      <div className={styles.text}>3. Edit your profile with "Cloud User Setting"</div>
+      <div className={styles.container}>
+        <div className={styles.counter}>
+          <Image
+            width={800}
+            height={500}
+            src="/images/cloud_setting.png"
+            alt=" "
+            unoptimized={true}
+          />
+        </div>
+      </div>
     </>
   )
 }

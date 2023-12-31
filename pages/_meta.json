@@ -3,14 +3,10 @@
   "method": "Get Start",
   "deployment": "Deployment",
   "cloud": "Cloud",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://automatex.dev/about-us",
     "newWindow": true
   }
 }
